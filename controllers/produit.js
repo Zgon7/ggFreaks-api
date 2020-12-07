@@ -30,7 +30,7 @@ exports.getProduit = async (req, res, next) => {
 };
 
 exports.createProduit = async (req, res, next) => {
-    if (!req.isAuth) {
+   /* if (!req.isAuth) {
         res.json({
             error: "Not Auth"
         });
@@ -40,22 +40,22 @@ exports.createProduit = async (req, res, next) => {
             res.json({
                 error: "Not admin"
             });
-        } else {
+        } else {*/
             const produit = new Produit({
                 nom: req.body.nom,
                 prix: req.body.prix,
                 image: req.body.image,
                 desc: req.body.desc,
                 stock: req.body.stock,
-                categorie: req.body.categorie,
+                sousCategorie: req.body.sousCategorie,
             });
             await produit.save();
             await res.json({
                 message: 'Produit created successfully!',
                 produit
             });
-        }
-    }
+        /*}
+    }*/
 };
 
 exports.updateProduit = async (req, res, next) => {
@@ -81,7 +81,7 @@ exports.updateProduit = async (req, res, next) => {
                 produit.prix = req.body.prix;
                 produit.desc = req.body.desc;
                 produit.stock = req.body.stock;
-                produit.categorie = req.body.categorie;
+                produit.sousCategorie = req.body.sousCategorie;
 
                 await produit.save();
 

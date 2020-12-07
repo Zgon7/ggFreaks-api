@@ -37,6 +37,7 @@ exports.createClient = async (req, res, next) => {
             error: "Email not valid"
         })
     }
+    console.log(req.body);
     const client = new Client({
         nom: req.body.nom,
         prenom: req.body.prenom,

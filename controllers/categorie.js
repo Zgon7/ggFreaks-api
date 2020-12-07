@@ -30,7 +30,7 @@ exports.getCategorie = async (req, res, next) => {
 };
 
 exports.createCategorie = async (req, res, next) => {
-    if (!req.isAuth) {
+   /* if (!req.isAuth) {
         res.json({
             error: "Not Auth"
         });
@@ -40,7 +40,7 @@ exports.createCategorie = async (req, res, next) => {
             res.json({
                 error: "Not admin"
             });
-        } else {
+        } else {*/
             const categorie = new Categorie({
                 nom: req.body.nom,
                 image: req.body.image,
@@ -50,8 +50,8 @@ exports.createCategorie = async (req, res, next) => {
                 message: 'Categorie created successfully!',
                 categorie
             });
-        }
-    }
+       /* }
+    }*/
 };
 
 exports.updateCategorie = async (req, res, next) => {

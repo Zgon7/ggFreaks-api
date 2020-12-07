@@ -6,6 +6,7 @@ const clientRoutes = require('./routes/client');
 const adminRoutes = require('./routes/admin');
 const commandeRoutes = require('./routes/commande');
 const produitRoutes = require('./routes/produit');
+const sousCategorieRoutes = require('./routes/sousCategorie');
 const auth = require('./middleware/auth');
 const cors = require('cors');
 
@@ -19,8 +20,10 @@ app.use((req, res, next) => {
   next();
 });
 
+
 app.use(auth);
 app.use(categorieRoutes);
+app.use(sousCategorieRoutes);
 app.use(produitRoutes);
 app.use(commandeRoutes);
 app.use(clientRoutes);

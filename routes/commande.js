@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/commandes', commandeController.getCommandes);
 router.get('/mycommandes', commandeController.getmyCommandes);
-router.get('/commande', commandeController.getCommande);
+router.get('/commande/:id', commandeController.getCommande);
 router.put('/commande', commandeController.updateCommande);
 router.post('/commande', commandeController.createCommande);
 

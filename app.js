@@ -9,6 +9,8 @@ const produitRoutes = require('./routes/produit');
 const sousCategorieRoutes = require('./routes/sousCategorie');
 const auth = require('./middleware/auth');
 const cors = require('cors');
+const mailjet = require ('node-mailjet').connect('2ef02d60d3a9b38d4bcfb3a26c89725d', '8d774aa18f52ce0bd8ea710b1ae00570');
+
 
 const app = express();
 app.use(cors());
@@ -41,6 +43,34 @@ app.post('/upload', multipartMiddleware, (req, res) => {
     'name': req.files.uploads[0].path.split("\\")[1]
   });
 });
+
+app.get('/email/:mail/:price', (req, res) => {
+  mailjet.post("send", {'version': 'v3.1'})
+      .request({
+        "Messages": [
+          {
+            "From": {
+              "Email": "nadersaber@hotmail.fr",
+              "Name": "Nader"
+            },
+            "To": [
+              {
+                "Email":  req.params.mail.trim().toLowerCase(),
+              }
+            ],
+            "Subject": "Commande Confirmation",
+            "HTMLPart": `<h1>Commande Confirmation</h1>
+                                       <p>Cet email est envoyé automatiquement après votre commande de ${req.params.price} </p>
+                                       <p>Merci pour votre achat.</p>
+                                      `,
+
+          }
+        ]
+      });
+  res.json({
+    'message': 'email Sent',
+  });
+})
 
 app.use('/files', express.static('files'));
 app.get('/files/:name', function (req, res, next) {

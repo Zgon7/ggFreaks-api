@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a07f9ba-fd14-428a-8a81-5b98c6f7f27f" name="Default Changelist" comment="">
+    <list default="true" id="6a07f9ba-fd14-428a-8a81-5b98c6f7f27f" name="Default Changelist" comment="second">
       <change afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/node_modules/.bin/acorn.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/node_modules/.bin/babylon" afterDir="false" />
@@ -6751,14 +6751,9 @@
       <change afterPath="$PROJECT_DIR$/node_modules/yargs/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/categorie.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/categorie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/client.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/produit.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/produit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/produit.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/produit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/categorie.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/categorie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/commande.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/commande.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/produit.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/produit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -6799,7 +6794,9 @@
       <workItem from="1604917943164" duration="5905000" />
       <workItem from="1605039507590" duration="44000" />
       <workItem from="1607375464906" duration="2346000" />
-      <workItem from="1607379505055" duration="1194000" />
+      <workItem from="1607379505055" duration="1536000" />
+      <workItem from="1607422679383" duration="2845000" />
+      <workItem from="1607465795792" duration="4486000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1604858021745</created>
@@ -6808,7 +6805,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604858021745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second">
+      <created>1607381185285</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607381185285</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -6816,36 +6820,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="536" y="202" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604919199178">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="536" y="202" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1604919199178" />
-    <state x="115" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604846043530">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="115" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604846043530" />
-    <state x="369" y="0" key="CommitChangelistDialog2" timestamp="1604858004509">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="369" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1604858004509" />
-    <state x="580" y="162" key="FileChooserDialogImpl" timestamp="1605039548947">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="580" y="162" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605039548947" />
-    <state x="619" y="116" width="596" height="195" key="Github.ShareDialog" timestamp="1604857882579">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="619" y="116" width="596" height="195" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1604857882579" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1604858031585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604858031585" />
-    <state x="570" y="313" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604857951228">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="570" y="313" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604857951228" />
+    <MESSAGE value="second" />
+    <option name="LAST_COMMIT_MESSAGE" value="second" />
   </component>
 </project>

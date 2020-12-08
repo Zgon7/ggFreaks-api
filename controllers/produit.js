@@ -1,4 +1,5 @@
 const Produit = require('../models/produit');
+const SousCateg = require('../models/sousCategorie');
 const Admin = require('../models/admin');
 
 exports.getProduits = async (req, res, next) => {
@@ -6,6 +7,21 @@ exports.getProduits = async (req, res, next) => {
     await res.json({
         produits
     });
+};
+
+exports.getBySousCategName = async (req, res, next) => {
+    if (!req.params.name) {
+        res.json({
+            error: "Id Not Found"
+        });
+    } else {
+        const sousCategorie = await SousCateg.findOne({ nom: req.params.name });
+        console.log(sousCategorie._id);
+        const products = await Produit.find({sousCategorie: sousCategorie._id});
+        await res.json({
+            products
+        });
+    }
 };
 
 exports.getProduit = async (req, res, next) => {

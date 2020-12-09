@@ -70,7 +70,32 @@ app.get('/email/:mail/:price', (req, res) => {
   res.json({
     'message': 'email Sent',
   });
-})
+});
+app.get('/emailcontact/:mail/:subject/:from', (req, res) => {
+  mailjet.post("send", {'version': 'v3.1'})
+      .request({
+        "Messages": [
+          {
+            "From": {
+              "Email": req.params.mail.trim().toLowerCase(),
+            },
+            "To": [
+              {
+                "Email": "nadersaber@hotmail.fr"
+              }
+            ],
+            "Subject": req.params.mail.trim().toLowerCase(),
+            "HTMLPart": `
+                                       <p>${req.params.mail}</p>
+                                      `,
+
+          }
+        ]
+      });
+  res.json({
+    'message': 'email Sent',
+  });
+});
 
 app.use('/files', express.static('files'));
 app.get('/files/:name', function (req, res, next) {
